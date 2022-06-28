@@ -1,0 +1,87 @@
+* {
+    box-sizing: content-box;
+  }
+  
+body { background-color: rgba(255, 255, 255, 0.637); }
+form { 
+    max-width:420px;
+    margin:50px auto; 
+    padding: 100px;
+    border-radius: 25px;
+    background-color: transparent;
+    padding: auto;
+    color: #ff0000;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.feedback-input {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:600;
+  font-size: 18px;
+  border-radius: 15px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid red;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+  color: rgb(0, 0, 0);
+}
+
+.feedback-input::placeholder{
+  color: #b8b8b8;
+}
+
+.feedback-input:focus { border:2px solid red; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 50%;
+  justify-content: center;
+  margin-left: 25%;
+  background:#ffffff;
+  border-radius:200px;
+  border:0;
+  cursor:pointer;
+  color:red;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:15px;
+  font-weight:700;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+[type="submit"]:hover { 
+  background:red;
+  color: white;
+}
+
+.pass-link{
+  margin-bottom: 30px;
+}
+.signup-link{
+  text-align: center;
+  margin-top: 30px;
+}
+.pass-link a,
+.signup-link a{
+  color: gray;
+  text-decoration: none;
+}
+
+.pass-link a:hover,
+.signup-link a:hover{
+  text-decoration: underline;
+  color: red;
+}
